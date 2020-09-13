@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<script type="text/javascript">
+window.onload = function () {
+    CanvasJS.addColorSet("piechartColors",
+                [//colorSet Array 
+                "#2F4F4F",   
+                "#b5190b",
+                "#b39032"       
+                ]);
+	var chart = new CanvasJS.Chart("chartContainer",
+	{
+        colorSet: "piechartColors",
+		title:{
+			text: "Sentiment Distribution of File"
+		},
+		legend: {
+			itemWidth: 300,
+            itemHeight: 200,
+            horizontalAlign: "left",
+            verticalAlign :"center"
+		},
+		data: [
+		{
+			type: "pie",
+			showInLegend: true,
+            explodeOnClick: true,
+            toolTipContent: "{y} %",
+			legendText: "{indexLabel}",
+			dataPoints: [
+				{ y: {{sentiment | get_item:'pos'}} * 100, indexLabel: "Positive" },
+				{ y: {{sentiment | get_item:'neg'}} * 100, indexLabel: "Negative" },
+				{ y: {{sentiment | get_item:'neu'}} * 100, indexLabel: "Neutral" }
+			]
+		}
+		]
+	});
+	chart.render();
+}
+</script>
+<script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+</head>
+<body style="background-color: gray;">
+<div id="chartContainer" style="height: 600px; width: 70%; margin-left: auto; margin-right: auto; background-color: gray;"></div>
+</body>
+</html>

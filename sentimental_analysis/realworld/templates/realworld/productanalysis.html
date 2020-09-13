@@ -1,0 +1,7 @@
+<h1>{{ note }}</h1>
+<form action = "{% url "product analysis" %}" method = "post">
+        {% csrf_token %}
+    <label for = "blogname">Blog URL</label>
+    <input id = "blogname" type="text" name="blogname">
+    <button type ="submit">Submit</button>
+</form>

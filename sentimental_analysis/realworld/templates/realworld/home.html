@@ -1,0 +1,9 @@
+<h1>{{ note }}</h1>
+<form action = "{% url "input" %}" method = "post" enctype="multipart/form-data">
+        {% csrf_token %}
+    <label for = "Name">Name</label>
+    <input id = "Name" type="text" name="Name">
+    <input type="file" name="document">
+    <br>
+    <button type ="submit">Submit</button>
+</form>

@@ -1,0 +1,466 @@
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Nischal Badarinath Kashyap 
+nkashya@ncsu.edu​ | 919-527-8781 | linkedin.com/in/nischal-kashyap-a9937611b | ​github.com/NischalKash 
+__________________________________________________________________________________________________________ 
+Objective  
+Self-motivated student with a Master’s degree in Computer Science and a work experience of 2 Years as a Software Developer. I
+   
+will be seeking a Software Engineer role for a full time opportunity starting May 2021. 
+_____________________________________________________________________________________________________ 
+Education 
+North Carolina State University, Raleigh, USA
+Masters in Computer Science
+May 2021 | CGPA - 3.56 
+_____________________________________________________________________________________________ 
+Skills 
+Programming Languages​ - C, Embedded C, C++, Python, JAVA, UNIX Systems Programming, MySQL, HTML, CSS, JavaScript 
+Technologies​  -  Perforce, TeraTerm, DLT Analyser, CPAS, WinScp, Sodera, Ellysis, JIRA, Elvis, GitHub, Frontline, Crucible,  
+Framework​ - Bluetooth Specification, Harman Framework, Connectivity Framework, File in User Space Systems(FUSE), Django 
+Coursework​ - Algorithms, Operating Systems, Networks, Data Structures, Object Oriented Programming, Data Mining, Artificial  
+_______________________________________________________________________________________________________________ 
+Work Experience 
+Graduate Teaching Assistant - North Carolina State University
+● Teaching Assistant for the course BUS 443 Web Development for Business Applications. 
+● Assist professor in preparing the coursework for the semester and aid students by clarifying concepts and evaluating them. 
+       ​Oct 2017 - Jul 2019 
+Wipro Technologies - Harman International(Client)
+● Software Developer in the Connected Car division for Harman International Account for bluetooth media module. Skilled in
+ 
+ 
+
+Visvesvaraya Technological University, Belgaum, India
+Bachelor of Engineering in Computer Science 
+May 2017 | First Class with Distinction
+
+    Confluence, Buildcentral, GNU Debugger, mediactl, ioctl commands, keras, scikit learn, BootStrap 
+
+Intelligence, Database Management Systems, Software Engineering 
+
+       ​Aug 2020 - Present 
+
+middleware development and maintenance of Bluetooth profiles such as A2DP, HFP, BIP and AVRCP for higher end projects. 
+
+● Debugged issues on AVRCP browsing, AVRCP commands, Events, Responses and Audio Buffering issues reported from clients.  
+● Resolved crash/memory issues using backtracking methods with the help of core dumps using GNU Debugger.  
+● Implemented a Bluetooth Feature Request - AVRCP STOP Command for Harman using mediactl. 
+       ​Jan 2016 - Jun 2016 
+BSNL - Project Trainee
+●
+_______________________________________________________________________________________________________________ 
+Projects 
+● Connection - Python, Django Framework, JavaScript, HTML, CSS, SQLite
+
+Implemented an algorithm for User ID automation in Python which required mapping between the user and the port assigned to. 
+
+ 
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Created a Web based Application with User Interface. The users upload their family members as objects onto the website. On a broad
+ 
+ 
+scale with abundant data, the application will find out whether members are connected using tree search methods. 
+
+   
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+● Pokemon​ ​Battle - Python(Socket Programming) 
+
+ 
+
+A pokemon game implemented using socket programming with two trainers able to battle out each other by selecting pokemons from
+ 
+the given roster. The game's implementation is in the initial stage with the backend logic being coded. 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+● Database Management Systems - JAVA, MySQLand JDBC
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Designed a database for an online library system to make book transactions and receive orders from distributors. The application level
+ 
+programming was written in JAVA while MySQL was used to perform queries on the database internally. 
+
+● Arrhythmia Classifier - Python, KNN K FoldCV, Random Forests  
+ 
+
+Developed a K Fold Cross Validation KNN algorithm from scratch to classify the arrhythmia dataset using major attributes. This was
+ 
+ 
+part of the course project and the algorithm obtained an efficiency of 68% in classifying the right data points. 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+● United States Path Routing - Python
+
+ 
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+A Depth First Search, A* and Recursive Best First Search algorithms were implemented to find the best path between a source and a
+   
+destination in a map dataset provided by the instructor. 
+
+   
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+● Data Analytics - Python
+ 
+
+ 
+
+ 
+
+Developed an AI model based on Bloom’s Taxonomy that was capable of converting a prolonged lecture video to a short summary
+ 
+ 
+video. A user defined word set was initially defined and data analysis was performed using NLP and Google API’s. 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+● Security and Robotics  - C, Embedded C, Python and MySQL(Socket Programming) 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+The project was developed to have multiple robots perform serial verification and authentication of users while being autonomous.
+ 
+This was intended to be a prototype to a larger scale project. The project was recommended for copyrights. 
+ 
+ 
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+_________________________________________________________________________________________________________ 
+Activities 
+● Athletics 
+● Leadership 
+● Volunteer
+● Academics
+
+Represented North Carolina State University’s Cricket Team. School and College Level Volleyball Player. 
+Marketing lead for College Fest Semaphore 2015. Leader of fest promotion teams marketing at various colleges. 
+
+Event Organizer at Semaphore 2014 and 2015. Women's Day Host at Wipro Technologies for March 2018. 
+
+10th Rank in Math Talent Exam for Bangalore. College Topper in Operational Research Course. 
+
+
