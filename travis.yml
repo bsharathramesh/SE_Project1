@@ -1,0 +1,22 @@
+language: python
+python:
+  - 3.6
+
+    # Write install command after writing requirements.md file
+    #install: 
+    #- pip install -r requirements.txt
+
+script: 
+  - pytest
+
+notifications:
+  email:
+    recipients: 
+      - mvijaya2@ncsu.edu
+      - nkashya@ncsu.edu
+      - sbangal2@ncsu.edu
+      - nrpandes@ncsu.edu
+      - arames22@ncsu.edu
+    
+    on_success: never
+    on_failure: always
