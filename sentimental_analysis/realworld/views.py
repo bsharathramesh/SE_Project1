@@ -8,6 +8,8 @@ from pdfminer.converter import XMLConverter, HTMLConverter, TextConverter
 from pdfminer.layout import LAParams
 from io import StringIO
 from .utilityFunctions import *
+import os
+import json
 
 def pdfparser(data):
 
@@ -66,8 +68,24 @@ def input(request):
 def productanalysis(request):
     if request.method=='POST':
         blogname = request.POST.get("blogname", "")
-        text_file = open("ProductAnalysis.txt", "w")
+        text_file = open("/Users/nischalkashyap/Downloads/Projects/SE_Project1/Amazon_Comments_Scrapper/amazon_reviews_scraping/amazon_reviews_scraping/spiders/ProductAnalysis.txt", "w")
         text_file.write(blogname)
+        text_file.close()
+        os.system('scrapy runspider /Users/nischalkashyap/Downloads/Projects/SE_Project1/Amazon_Comments_Scrapper/amazon_reviews_scraping/amazon_reviews_scraping/spiders/amazon_review.py -o reviews.json')
+        final_comment = " "
+        with open('/Users/nischalkashyap/Downloads/Projects/SE_Project1/sentimental_analysis/reviews.json') as json_file:
+            data = json.load(json_file)
+            for p in range(1,len(data)-1):
+                a = data[p]['comment']
+                b = a.split()
+                for i in b:
+                    final_comment += " " + i
+
+        text = get_clean_text(final_comment)
+        result = sentiment_scores(text)
+        print(result)
+        return render(request, 'realworld/sentiment_graph.html', {'sentiment': result})
+
     else:
         note = "Please Enter the product blog name for analysis"
         return render(request, 'realworld/productanalysis.html', {'note': note})
