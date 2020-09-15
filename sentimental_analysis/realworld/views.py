@@ -28,13 +28,15 @@ def pdfparser(data):
     text_file.write(data)
 
     text_file = open("Output.txt",'r', encoding="utf-8")
+    final_comment = []
     a = ""
     for x in text_file:
             if len(x)>2:
                 b = x.split()
                 for i in b:
-                    a += i + " "
-    return a
+                    a+=" "+i
+    final_comment = a.split('.')
+    return final_comment
 
 def analysis(request):
     return render(request,'realworld/analysis.html')
@@ -72,15 +74,14 @@ def productanalysis(request):
         text_file.write(blogname)
         text_file.close()
         os.system('scrapy runspider /Users/nischalkashyap/Downloads/Projects/SE_Project1/Amazon_Comments_Scrapper/amazon_reviews_scraping/amazon_reviews_scraping/spiders/amazon_review.py -o reviews.json')
-        final_comment = " "
+        final_comment = []
         with open('/Users/nischalkashyap/Downloads/Projects/SE_Project1/sentimental_analysis/reviews.json') as json_file:
             data = json.load(json_file)
             for p in range(1,len(data)-1):
                 a = data[p]['comment']
-                b = a.split()
-                for i in b:
-                    final_comment += " " + i
+                final_comment.append(a)
 
+        #final_comment is a list of strings!
         text = get_clean_text(final_comment)
         result = sentiment_scores(text)
         print(result)
