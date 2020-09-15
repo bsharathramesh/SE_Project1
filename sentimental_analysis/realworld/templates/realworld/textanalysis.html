@@ -1,0 +1,10 @@
+<h1>{{ note }}</h1>
+<form action = "{% url "text analysis" %}" method = "post" enctype="multipart/form-data">
+        {% csrf_token %}
+    <label for = "Text"></label>
+    <textarea id = "Text" type="textarea" name="Text" rows = "10" cols="50">
+    </textarea>
+    <br>
+    <br>
+    <button type ="submit">Submit</button>
+</form>

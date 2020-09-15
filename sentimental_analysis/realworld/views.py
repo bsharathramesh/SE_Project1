@@ -92,6 +92,21 @@ def productanalysis(request):
         return render(request, 'realworld/productanalysis.html', {'note': note})
 
 # Custom template filter to retrieve a dictionary value by key.
+
+def textanalysis(request):
+    if request.method == 'POST':
+        text_data = request.POST.get("Text", "")
+        final_comment = text_data.split('.')
+
+        # final_comment is a list of strings!
+        text = get_clean_text(final_comment)
+        result = sentiment_scores(text)
+        print(result)
+        return render(request, 'realworld/sentiment_graph.html', {'sentiment': result})
+    else:
+        note = "Text to be analysed!"
+        return render(request, 'realworld/textanalysis.html', {'note': note})
+
 @register.filter(name='get_item')
 def get_item(dictionary, key):
     return dictionary.get(key, 0)

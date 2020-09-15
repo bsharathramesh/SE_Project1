@@ -26,6 +26,7 @@ urlpatterns = [
     url(r'^$',realworld.views.analysis,name='analysis'),
     url(r'^input',realworld.views.input,name = 'input'),
     url(r'^productanalysis',realworld.views.productanalysis,name = 'product analysis'),
+    url(r'^textanalysis',realworld.views.textanalysis,name = 'text analysis'),
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)
