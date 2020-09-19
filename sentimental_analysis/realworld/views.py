@@ -80,7 +80,6 @@ def input(request):
                 value = text.split('.')
         # Sentiment Analysis
         os.system('cd /Users/nischalkashyap/Downloads/Projects/SE_Project1/sentimental_analysis/media/ && rm -rf *')
-        print(value)
         text = get_clean_text(value)
         result = sentiment_scores(text)
         return render(request, 'realworld/sentiment_graph.html', {'sentiment': result})
