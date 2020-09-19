@@ -51,7 +51,6 @@ def get_clean_text(text):
 
 def input(request):
     if request.method=='POST':
-        name = request.POST.get("Name", "")
         file = request.FILES['document']
         fs = FileSystemStorage()
         fs.save(file.name,file)
@@ -72,20 +71,18 @@ def input(request):
             final_comment = a.split('.')
             value = final_comment
         elif extension_name=='wav':
-            print("Detecting MP3 File")
             r = sr.Recognizer()
             with sr.AudioFile(path) as source:
-                print("Reading Data")
                 # listen for the data (load audio to memory)
                 audio_data = r.record(source)
                 # recognize (convert from speech to text)
                 text = r.recognize_google(audio_data)
                 value = text.split('.')
-        print(value)
         # Sentiment Analysis
+        os.system('cd /Users/nischalkashyap/Downloads/Projects/SE_Project1/sentimental_analysis/media/ && rm -rf *')
+        print(value)
         text = get_clean_text(value)
         result = sentiment_scores(text)
-        print(result)
         return render(request, 'realworld/sentiment_graph.html', {'sentiment': result})
     else:
         note = "Please Enter the file you want it to be uploaded"
