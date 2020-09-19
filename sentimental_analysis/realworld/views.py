@@ -10,6 +10,7 @@ from io import StringIO
 from .utilityFunctions import *
 import os
 import json
+import speech_recognition as sr
 
 def pdfparser(data):
 
@@ -28,7 +29,6 @@ def pdfparser(data):
     text_file.write(data)
 
     text_file = open("Output.txt",'r', encoding="utf-8")
-    final_comment = []
     a = ""
     for x in text_file:
             if len(x)>2:
@@ -56,8 +56,32 @@ def input(request):
         fs = FileSystemStorage()
         fs.save(file.name,file)
         pathname = "media/"
-        value = pdfparser(pathname+file.name)
-
+        extension_name = file.name
+        extension_name = extension_name[len(extension_name)-3:]
+        path = pathname+file.name
+        if extension_name == 'pdf':
+            value = pdfparser(path)
+        elif extension_name == 'txt':
+            text_file = open(path, 'r', encoding="utf-8")
+            a = ""
+            for x in text_file:
+                if len(x) > 2:
+                    b = x.split()
+                    for i in b:
+                        a += " " + i
+            final_comment = a.split('.')
+            value = final_comment
+        elif extension_name=='wav':
+            print("Detecting MP3 File")
+            r = sr.Recognizer()
+            with sr.AudioFile(path) as source:
+                print("Reading Data")
+                # listen for the data (load audio to memory)
+                audio_data = r.record(source)
+                # recognize (convert from speech to text)
+                text = r.recognize_google(audio_data)
+                value = text.split('.')
+        print(value)
         # Sentiment Analysis
         text = get_clean_text(value)
         result = sentiment_scores(text)
