@@ -1,334 +1,11 @@
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
-Nischal Badarinath Kashyap 
-nkashya@ncsu.edu​ | 919-527-8781 | linkedin.com/in/nischal-kashyap-a9937611b | ​github.com/NischalKash 
-__________________________________________________________________________________________________________ 
-Objective  
-Self-motivated student with a Master’s degree in Computer Science and a work experience of 2 Years as a Software Developer. I
-   
-will be seeking a Software Engineer role for a full time opportunity starting May 2021. 
-_____________________________________________________________________________________________________ 
-Education 
-North Carolina State University, Raleigh, USA
-Masters in Computer Science
-May 2021 | CGPA - 3.56 
-_____________________________________________________________________________________________ 
-Skills 
-Programming Languages​ - C, Embedded C, C++, Python, JAVA, UNIX Systems Programming, MySQL, HTML, CSS, JavaScript 
-Technologies​  -  Perforce, TeraTerm, DLT Analyser, CPAS, WinScp, Sodera, Ellysis, JIRA, Elvis, GitHub, Frontline, Crucible,  
-Framework​ - Bluetooth Specification, Harman Framework, Connectivity Framework, File in User Space Systems(FUSE), Django 
-Coursework​ - Algorithms, Operating Systems, Networks, Data Structures, Object Oriented Programming, Data Mining, Artificial  
-_______________________________________________________________________________________________________________ 
-Work Experience 
-Graduate Teaching Assistant - North Carolina State University
-● Teaching Assistant for the course BUS 443 Web Development for Business Applications. 
-● Assist professor in preparing the coursework for the semester and aid students by clarifying concepts and evaluating them. 
-       ​Oct 2017 - Jul 2019 
-Wipro Technologies - Harman International(Client)
-● Software Developer in the Connected Car division for Harman International Account for bluetooth media module. Skilled in
- 
- 
-
-Visvesvaraya Technological University, Belgaum, India
-Bachelor of Engineering in Computer Science 
-May 2017 | First Class with Distinction
-
-    Confluence, Buildcentral, GNU Debugger, mediactl, ioctl commands, keras, scikit learn, BootStrap 
-
-Intelligence, Database Management Systems, Software Engineering 
-
-       ​Aug 2020 - Present 
-
-middleware development and maintenance of Bluetooth profiles such as A2DP, HFP, BIP and AVRCP for higher end projects. 
-
-● Debugged issues on AVRCP browsing, AVRCP commands, Events, Responses and Audio Buffering issues reported from clients.  
-● Resolved crash/memory issues using backtracking methods with the help of core dumps using GNU Debugger.  
-● Implemented a Bluetooth Feature Request - AVRCP STOP Command for Harman using mediactl. 
-       ​Jan 2016 - Jun 2016 
-BSNL - Project Trainee
-●
-_______________________________________________________________________________________________________________ 
-Projects 
-● Connection - Python, Django Framework, JavaScript, HTML, CSS, SQLite
-
-Implemented an algorithm for User ID automation in Python which required mapping between the user and the port assigned to. 
-
- 
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
-Created a Web based Application with User Interface. The users upload their family members as objects onto the website. On a broad
- 
- 
-scale with abundant data, the application will find out whether members are connected using tree search methods. 
-
-   
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
-● Pokemon​ ​Battle - Python(Socket Programming) 
-
- 
-
-A pokemon game implemented using socket programming with two trainers able to battle out each other by selecting pokemons from
- 
-the given roster. The game's implementation is in the initial stage with the backend logic being coded. 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
-● Database Management Systems - JAVA, MySQLand JDBC
-
- 
-
- 
-
- 
-
- 
-
- 
-
-Designed a database for an online library system to make book transactions and receive orders from distributors. The application level
- 
-programming was written in JAVA while MySQL was used to perform queries on the database internally. 
-
-● Arrhythmia Classifier - Python, KNN K FoldCV, Random Forests  
- 
-
-Developed a K Fold Cross Validation KNN algorithm from scratch to classify the arrhythmia dataset using major attributes. This was
- 
- 
-part of the course project and the algorithm obtained an efficiency of 68% in classifying the right data points. 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
+Mangalnathan Vijayagopal 
++1 919-527-4563 | mvijaya2@ncsu.edu | linkedin.com/in/mangalnathanvg| github.com/mangalnathanvg 
 
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
-● United States Path Routing - Python
-
- 
- 
-
- 
-
- 
-
- 
-
- 
-
-A Depth First Search, A* and Recursive Best First Search algorithms were implemented to find the best path between a source and a
-   
-destination in a map dataset provided by the instructor. 
-
-   
-
- 
-
- 
-
- 
-
- 
+EDUCATION  
+North Carolina State University, Raleigh 
+Master of Computer Science - 3.833/4.0                                                                                                                   
+Amrita Vishwa Vidyapeetham, Bangalore, India 
+Bachelor of Technology, Computer Science and Engineering – 9.40/10.0                    
 
  
 
@@ -346,63 +23,68 @@ destination in a map dataset provided by the instructor.
 
  
 
- 
-
- 
-
- 
+                                                       May 2021  
 
  
 
  
 
-● Data Analytics - Python
  
 
  
 
- 
+       May 2018 
 
-Developed an AI model based on Bloom’s Taxonomy that was capable of converting a prolonged lecture video to a short summary
  
  
-video. A user defined word set was initially defined and data analysis was performed using NLP and Google API’s. 
 
- 
-
- 
+TECHNICAL SKILLS                                                                                                                                        
+Programming: 
+Databases:  
+Web Technologies:  
+Machine Learning:  
+Software:  
+Methodologies: 
 
- 
+Python, Javascript, C++, Java 
+MySQL, PostgreSQL, MongoDB, pgAdmin4                                                                                                                                                     
+Django, ReactJS, Redux, HTML, CSS, Bootstrap, Express, NodeJS, npm                                                                                 
+scikit-learn, Numpy, Pandas, Support Vector Machines, Logistic Regression                                                   
+Visual Studio Code, Sublime Text, Google Colab, Rstudio, Git, Supervisord, JIRA, Crucible, Heroku                         
+Agile, Iterative, Scrum, SDLC 
 
  
-
  
 
- 
+PROFESSIONAL EXPERIENCE 
+Center of Innovation Management Studies, Raleigh, United States of America       
+Software Developer Intern 
 
  
 
- 
+            January 2020 – present            
 
- 
+  Developed a software subsystem to predict the virality of chemicals for the American Coatings Association (ACA) to 
 
- 
+enable them to make informed business marketing decisions. My role was to develop a Django Application to integrate 
+the virality prediction model already in place. 
 
- 
+  My Role: Designed and implemented the database architecture using PostgreSQL and pgAdmin 4 with optimized 
 
- 
+database procedure calls for faster performance in data transactions in the system 
 
- 
+  My Role: Implemented and tested the tweet capture tool using Python, Tweepy and psycopg2 to collect and segregate 
 
- 
+around 2 million tweets. 
 
- 
+  My Role: Programmed utility scripts using Python and PyTrends to capture google trends data for the chemicals of 
 
+interest along with cleaning tweet text by stemming each term of the tweet resulting in improving the accuracy of virality 
+predictions 
  
-
-● Security and Robotics  - C, Embedded C, Python and MySQL(Socket Programming) 
 
- 
+Cerner Corporation, Bangalore, India                                                                                                           January 2018 – June 2019            
+Software Engineer                                               
 
  
 
@@ -412,55 +94,54 @@ video. A user defined word set was initially defined and data analysis was perfo
 
  
 
- 
+  Handled technical change requests made by clients to investigate and fix bugs, develop and support code enhancements 
 
- 
+in object oriented C++ which resulted in the improvement of the overall performance of Cerner Millennium, a software 
+suite extensively used for ICU charting by various healthcare institutions 
+Implemented automated test scripts using Eggplant to rigorously test the functional workflows of Cerner Millennium 
+software suite and eliminate manual testing  
 
-The project was developed to have multiple robots perform serial verification and authentication of users while being autonomous.
- 
-This was intended to be a prototype to a larger scale project. The project was recommended for copyrights. 
- 
- 
- 
+ 
 
- 
+  Directed and supervised extensive code reviews using Crucible to ensure clean and efficient code delivery to clients 
+Facilitated cross-team communication by organizing and conducting meetings with team members and managers to 
+ 
+resolve overlapping issues and to gather workflow information related to change request under context    
 
  
+PROJECTS 
+Arrhythmia Prediction and Diagnosis using Data Analysis – Automated Learning and Data Analysis Team Project                             
 
- 
+  My Role: Performed a subset of data pre-processing steps i.e eliminating redundant data, approximating missing values 
 
- 
+and data normalization on the dataset to improve the prediction accuracy of the machine learning models. 
 
- 
+  My Role: Implemented Support Vector Machines(SVM) using python and scikit-learn to predict the type of Arrhythmia 
 
- 
+given the numerical format of ECG data with a prediction accuracy of 73% 
 
- 
+Feedback Collection Application (Deployed on Heroku) - Node with React 
 
  
 
- 
+                           
 
- 
+  Developed a full stack web application to collect feedback through survey forms from multiple users by email using 
 
- 
+MongoDB, Express, React, Redux, NodeJS and npm packages. 
+Enforced user authentication in the application using PassportJS and Google + API to provide reliable security to users 
 
- 
+ 
 
- 
+Face Recognition Application (Deployed on Heroku) – Full stack Web Development 
 
-_________________________________________________________________________________________________________ 
-Activities 
-● Athletics 
-● Leadership 
-● Volunteer
-● Academics
+ 
 
-Represented North Carolina State University’s Cricket Team. School and College Level Volleyball Player. 
-Marketing lead for College Fest Semaphore 2015. Leader of fest promotion teams marketing at various colleges. 
+Implemented and deployed a full stack web application that uses ClarifAI, an Image Recognition API to detect faces in any 
+image obtained from URLs entered by a registered user. 
 
-Event Organizer at Semaphore 2014 and 2015. Women's Day Host at Wipro Technologies for March 2018. 
+  The full stack application is comprised of ReactJS for front-end, NodeJS for back-end and PostgreSQL for the database 
 
-10th Rank in Math Talent Exam for Bangalore. College Topper in Operational Research Course. 
+components 
 
 

@@ -47,7 +47,48 @@ def get_clean_text(text):
     text = removeSpecialChar(text)
     text = stripPunctuations(text)
     text = stripExtraWhiteSpaces(text)
-    return text
+
+    #Tokenize using nltk
+    tokens = nltk.word_tokenize(text)
+
+    #Import stopwords
+    stop_words = set(stopwords.words('english'))
+    stop_words.add('rt')
+    stop_words.add('')
+    
+    #Remove tokens which are in stop_words
+    newtokens = [item for item in tokens if item not in stop_words]
+
+    textclean = ' '.join(newtokens)
+    return textclean
+
+def detailed_analysis(result):
+    result_dict = {}
+    neg_count = 0
+    pos_count = 0
+    neu_count = 0
+    total_count = len(result)
+
+    for item in result:
+        print(item)
+        cleantext = get_clean_text(str(item))
+        print(cleantext)
+        sentiment = sentiment_scores(cleantext)
+        print(sentiment)
+        compound_score = sentiment['compound']
+
+        pos_count += sentiment['pos']
+        neu_count += sentiment['neu']
+        neg_count += sentiment['neg']
+    
+    total = pos_count + neu_count + neg_count
+    result_dict['pos'] = (pos_count/total)
+    result_dict['neu'] = (neu_count/total)
+    result_dict['neg'] = (neg_count/total)
+
+    return result_dict
+        
+
 
 def input(request):
     if request.method=='POST':
@@ -58,8 +99,10 @@ def input(request):
         extension_name = file.name
         extension_name = extension_name[len(extension_name)-3:]
         path = pathname+file.name
+        result = {}
         if extension_name == 'pdf':
             value = pdfparser(path)
+            result = detailed_analysis(value)
         elif extension_name == 'txt':
             text_file = open(path, 'r', encoding="utf-8")
             a = ""
@@ -69,7 +112,7 @@ def input(request):
                     for i in b:
                         a += " " + i
             final_comment = a.split('.')
-            value = final_comment
+            result = detailed_analysis(final_comment)
         elif extension_name=='wav':
             r = sr.Recognizer()
             with sr.AudioFile(path) as source:
@@ -78,10 +121,9 @@ def input(request):
                 # recognize (convert from speech to text)
                 text = r.recognize_google(audio_data)
                 value = text.split('.')
+                result = detailed_analysis(value)
         # Sentiment Analysis
         os.system('cd /Users/nischalkashyap/Downloads/Projects/SE_Project1/sentimental_analysis/media/ && rm -rf *')
-        text = get_clean_text(value)
-        result = sentiment_scores(text)
         return render(request, 'realworld/sentiment_graph.html', {'sentiment': result})
     else:
         note = "Please Enter the file you want it to be uploaded"
@@ -102,8 +144,7 @@ def productanalysis(request):
                 final_comment.append(a)
 
         #final_comment is a list of strings!
-        text = get_clean_text(final_comment)
-        result = sentiment_scores(text)
+        result = detailed_analysis(final_comment)
         print(result)
         return render(request, 'realworld/sentiment_graph.html', {'sentiment': result})
 
@@ -119,8 +160,7 @@ def textanalysis(request):
         final_comment = text_data.split('.')
 
         # final_comment is a list of strings!
-        text = get_clean_text(final_comment)
-        result = sentiment_scores(text)
+        result = detailed_analysis(final_comment)
         print(result)
         return render(request, 'realworld/sentiment_graph.html', {'sentiment': result})
     else:
