@@ -110,9 +110,9 @@ def input(pathname):
 
 
 def productanalysis():
-        os.system('scrapy runspider amazon_test.py -o reviews.json')
+        os.system('scrapy runspider ./amazon_test.py -o ./reviews.json')
         final_comment = []
-        with open('reviews.json') as json_file:
+        with open('./reviews.json') as json_file:
             data = json.load(json_file)
             for p in range(1, len(data) - 1):
                 a = data[p]['comment']

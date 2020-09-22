@@ -12,8 +12,8 @@ class AmazonReviewsSpider(scrapy.Spider):
 
     # Domain names to scrape
     allowed_domains = ['amazon.com']
-    os.system("rm reviews.json")
-    my_file_handle = open('ProductAnalysis.txt')
+    os.system("rm ./reviews.json")
+    my_file_handle = open('./ProductAnalysis.txt')
     myBaseUrl = my_file_handle.read()
     # myBaseUrl = "https://www.amazon.in/Apple-MacBook-Air-13-3-inch-MQD32HN/product-reviews/B073Q5R6VR/ref=cm_cr_dp_d_show_all_btm?ie=UTF8&amp;amp;reviewerType=all_reviews&amp;amp;pageNumber="
     start_urls = []
