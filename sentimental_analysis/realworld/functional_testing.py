@@ -110,9 +110,9 @@ def input(pathname):
 
 
 def productanalysis():
-        os.system('scrapy runspider /Users/nischalkashyap/Downloads/Projects/CELT/SE_Project1/sentimental_analysis/realworld/amazon_test.py -o reviews.json')
+        os.system('scrapy runspider amazon_test.py -o reviews.json')
         final_comment = []
-        with open('/Users/nischalkashyap/Downloads/Projects/CELT/SE_Project1/sentimental_analysis/realworld/reviews.json') as json_file:
+        with open('reviews.json') as json_file:
             data = json.load(json_file)
             for p in range(1, len(data) - 1):
                 a = data[p]['comment']
@@ -144,7 +144,7 @@ if __name__ == "__main__":
 
     if test2_output==expected2_output:
         count+=1
-    test3_output = input("/Users/nischalkashyap/Downloads/Projects/CELT/SE_Project1/sentimental_analysis/media/Nischal_Badarinath_Kashyap.pdf")
+    test3_output = input("../media/Nischal_Badarinath_Kashyap.pdf")
     expected_output3 = {'pos': 0.06351351351351352, 'neu': 0.9209189189189189, 'neg': 0.015567567567567572}
 
     if expected_output3==test3_output:
