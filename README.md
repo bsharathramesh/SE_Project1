@@ -11,5 +11,5 @@ YouTube Link:
 1. Execute manage.py using the command `python3 manage.py runserver` at `/SE_Project1/sentimental_analaysis`. This runs the Django server such that we can open the webUI for the project on the browser.
 2. Next, open your browser and type in `localhost:8000` in the search bar to open the webUI of the application.
 3. The UI typically looks as shown below and here you have a choice between URL, file or normal text input.
-![Screen Shot 2020-09-21 at 10 59 32 PM](https://user-images.githubusercontent.com/65666095/93840835-c4ad3600-fc5f-11ea-80ed-1bac1da09f37.png)
+![Capture](https://user-images.githubusercontent.com/65666095/93840913-00e09680-fc60-11ea-8ef6-428e1ad5b46e.PNG)
 
