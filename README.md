@@ -1,4 +1,5 @@
 # SE Project 1
+
 # C.E.L.T: The Sentimental Analyser 
 
 ### YouTube Link: 
@@ -6,6 +7,10 @@
 [![](https://i9.ytimg.com/vi_webp/zvme9ARshD8/mqdefault.webp?sqp=CJCZpfsF&rs=AOn4CLCYgil0diVKrPbCJ5Wchyl3i12Njw)](https://www.youtube.com/watch?v=zvme9ARshD8)
 
 [![DOI](https://zenodo.org/badge/295188611.svg)](https://zenodo.org/badge/latestdoi/295188611)
+
+[![Build Status](https://travis-ci.org/bsharathramesh/SE_Project1.svg?branch=master)](https://travis-ci.org/bsharathramesh/SE_Project1)
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## INTRODUCTION
 
@@ -23,9 +28,11 @@ Although we have used HTML and CSS for the FrontEnd, the users can merge the bac
 
 
 ## Steps for execution
-1. Execute manage.py using the command `python3 manage.py runserver` at `/SE_Project1/sentimental_analaysis`. This runs the Django server such that we can open the webUI for the project on the browser.
-2. Next, open your browser and type in `localhost:8000` in the search bar to open the webUI of the application.
-3. The UI typically looks as shown below and here you have a choice between URL, file or normal text input.
+1. Run `python -r requirements.txt` followed by `python -c "import nltk; nltk.download('punkt'); nltk.download('stopwords')"`
+2. Make sure you change the path accordingly in the files.  
+3. Execute manage.py using the command `python3 manage.py runserver` at `/SE_Project1/sentimental_analaysis`. This runs the Django server such that we can open the webUI for the project on the browser.
+4. Next, open your browser and type in `localhost:8000` in the search bar to open the webUI of the application.
+5. The UI typically looks as shown below and here you have a choice between URL, file or normal text input.
 ![Capture](https://user-images.githubusercontent.com/65666095/93840913-00e09680-fc60-11ea-8ef6-428e1ad5b46e.PNG)
 
 The UI for URL input is as shown below:
