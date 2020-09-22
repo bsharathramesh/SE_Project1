@@ -87,8 +87,6 @@ def detailed_analysis(result):
     result_dict['neg'] = (neg_count/total)
 
     return result_dict
-        
-
 
 def input(request):
     if request.method=='POST':
@@ -123,7 +121,7 @@ def input(request):
                 value = text.split('.')
                 result = detailed_analysis(value)
         # Sentiment Analysis
-        os.system('cd /Users/nischalkashyap/Downloads/Projects/SE_Project1/sentimental_analysis/media/ && rm -rf *')
+        os.system('cd /Users/nischalkashyap/Downloads/Projects/CELT/SE_Project1/sentimental_analysis/media/ && rm -rf *')
         return render(request, 'realworld/sentiment_graph.html', {'sentiment': result})
     else:
         note = "Please Enter the file you want to analyze"
@@ -132,12 +130,12 @@ def input(request):
 def productanalysis(request):
     if request.method=='POST':
         blogname = request.POST.get("blogname", "")
-        text_file = open("/Users/nischalkashyap/Downloads/Projects/SE_Project1/Amazon_Comments_Scrapper/amazon_reviews_scraping/amazon_reviews_scraping/spiders/ProductAnalysis.txt", "w")
+        text_file = open("/Users/nischalkashyap/Downloads/Projects/CELT/SE_Project1/Amazon_Comments_Scrapper/amazon_reviews_scraping/amazon_reviews_scraping/spiders/ProductAnalysis.txt", "w")
         text_file.write(blogname)
         text_file.close()
-        os.system('scrapy runspider /Users/nischalkashyap/Downloads/Projects/SE_Project1/Amazon_Comments_Scrapper/amazon_reviews_scraping/amazon_reviews_scraping/spiders/amazon_review.py -o reviews.json')
+        os.system('scrapy runspider /Users/nischalkashyap/Downloads/Projects/CELT/SE_Project1/Amazon_Comments_Scrapper/amazon_reviews_scraping/amazon_reviews_scraping/spiders/amazon_review.py -o reviews.json')
         final_comment = []
-        with open('/Users/nischalkashyap/Downloads/Projects/SE_Project1/sentimental_analysis/reviews.json') as json_file:
+        with open('/Users/nischalkashyap/Downloads/Projects/CELT/SE_Project1/sentimental_analysis/reviews.json') as json_file:
             data = json.load(json_file)
             for p in range(1,len(data)-1):
                 a = data[p]['comment']
