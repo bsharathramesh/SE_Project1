@@ -126,7 +126,7 @@ def input(request):
         os.system('cd /Users/nischalkashyap/Downloads/Projects/SE_Project1/sentimental_analysis/media/ && rm -rf *')
         return render(request, 'realworld/sentiment_graph.html', {'sentiment': result})
     else:
-        note = "Please Enter the file you want it to be uploaded"
+        note = "Please Enter the file you want to analyze"
         return render(request, 'realworld/home.html', {'note': note})
 
 def productanalysis(request):
@@ -149,7 +149,7 @@ def productanalysis(request):
         return render(request, 'realworld/sentiment_graph.html', {'sentiment': result})
 
     else:
-        note = "Please Enter the product blog name for analysis"
+        note = "Please Enter the product blog link for analysis"
         return render(request, 'realworld/productanalysis.html', {'note': note})
 
 # Custom template filter to retrieve a dictionary value by key.
