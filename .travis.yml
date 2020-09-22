@@ -3,11 +3,12 @@ python:
   - 3.6
 
     # Write install command after writing requirements.md file
-    #install: 
-    #- pip install -r requirements.txt
+install: 
+  - pip install -r requirements.txt
+  - python -c "import nltk; nltk.download('punkt'); nltk.download('stopwords')" 
 
 script: 
-  - pytest
+  - python sentimental_analysis/realworld/functional_testing.py
 
 notifications:
   email:
