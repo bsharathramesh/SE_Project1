@@ -110,9 +110,9 @@ def input(pathname):
 
 
 def productanalysis():
-        os.system('scrapy runspider ~/SE_Project1/sentimental_analysis/realworld/amazon_test.py -o ~/SE_Project1/sentimental_analysis/realworld/reviews.json')
+        os.system('scrapy runspider ~/build/bsharathramesh/SE_Project1/sentimental_analysis/realworld/amazon_test.py -o ~/build/bsharathramesh/SE_Project1/sentimental_analysis/realworld/reviews.json')
         final_comment = []
-        with open('~/SE_Project1/sentimental_analysis/realworld/reviews.json') as json_file:
+        with open('/home/travis/build/bsharathramesh/SE_Project1/sentimental_analysis/realworld/reviews.json') as json_file:
             data = json.load(json_file)
             for p in range(1, len(data) - 1):
                 a = data[p]['comment']
