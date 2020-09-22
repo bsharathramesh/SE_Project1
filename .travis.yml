@@ -7,7 +7,7 @@ install:
   - pip install -r requirements.txt
 
 script: 
-  - python /sentimental_analysis/realworld/functional_testing.py
+  - python sentimental_analysis/realworld/functional_testing.py
 
 notifications:
   email:
