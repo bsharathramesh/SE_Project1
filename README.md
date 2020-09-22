@@ -1,5 +1,14 @@
 # SE Project 1
-Software Engineering Project 1: Sentimental analysis of comments for various products
+# C.E.L.T: The Sentimental Analyser 
+
+## Team Members
+				
+Mangalnathan Vijayagopal (mvijaya2)
+Nischal Badarinath Kashyap (nkashya)
+Amogh Rameshappa Devapura (arames22)
+Niranjan Pandeshwar (nrpandes)
+Sharath Bangalore Ramesh Kumar (sbangal2)
+
 
 YouTube Link: 
 
@@ -12,4 +21,7 @@ YouTube Link:
 2. Next, open your browser and type in `localhost:8000` in the search bar to open the webUI of the application.
 3. The UI typically looks as shown below and here you have a choice between URL, file or normal text input.
 ![Capture](https://user-images.githubusercontent.com/65666095/93840913-00e09680-fc60-11ea-8ef6-428e1ad5b46e.PNG)
+
+The UI for URL input is as shown below:
+
 
