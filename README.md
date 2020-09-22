@@ -40,9 +40,13 @@ The UI for text input is as shown below:
 ## FUTURE SCOPE
 
 Implement user authentication to store history for each user.
+
 Recommendation system based on analysis results.
+
 Live speech to text sentiment analysis.
+
 Enhance the analysis by taking into consideration the number of users rated for each product!
+
 Extend the analysis to the Facebook, Twitter and LinkedIn Posts
 
 ## Team Members
