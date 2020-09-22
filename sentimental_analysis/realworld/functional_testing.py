@@ -131,25 +131,26 @@ def textanalysis(final_comment):
 def get_item(dictionary, key):
     return dictionary.get(key, 0)
 
-count = 0
-string_name = "Its been a pleasure working with you! The lunch was great and the ambience was amazing"
-test1_output = textanalysis(string_name)
-expected_output1 = {'pos': 0.699, 'neu': 0.301, 'neg': 0.0}
-if test1_output==expected_output1:
-    count+=1
+if __name__ == "__main__":
+    count = 0
+    string_name = "Its been a pleasure working with you! The lunch was great and the ambience was amazing"
+    test1_output = textanalysis(string_name)
+    expected_output1 = {'pos': 0.699, 'neu': 0.301, 'neg': 0.0}
+    if test1_output==expected_output1:
+        count+=1
 
-test2_output = productanalysis()
-expected2_output = {'pos': 0.079474061957537, 'neu': 0.8279877153157976, 'neg': 0.09253822272666543}
+    test2_output = productanalysis()
+    expected2_output = {'pos': 0.079474061957537, 'neu': 0.8279877153157976, 'neg': 0.09253822272666543}
 
-if test2_output==expected2_output:
-    count+=1
-test3_output = input("/Users/nischalkashyap/Downloads/Projects/CELT/SE_Project1/sentimental_analysis/media/Nischal_Badarinath_Kashyap.pdf")
-expected_output3 = {'pos': 0.06351351351351352, 'neu': 0.9209189189189189, 'neg': 0.015567567567567572}
+    if test2_output==expected2_output:
+        count+=1
+    test3_output = input("/Users/nischalkashyap/Downloads/Projects/CELT/SE_Project1/sentimental_analysis/media/Nischal_Badarinath_Kashyap.pdf")
+    expected_output3 = {'pos': 0.06351351351351352, 'neu': 0.9209189189189189, 'neg': 0.015567567567567572}
 
-if expected_output3==test3_output:
-    count+=1
+    if expected_output3==test3_output:
+        count+=1
 
-if count==3:
-    print("All test Cases Passed")
-else:
-    print("One or more test cases failed!!")
+    if count==3:
+        print("All test Cases Passed")
+    else:
+        print("One or more test cases failed!!")
