@@ -23,5 +23,10 @@ YouTube Link:
 ![Capture](https://user-images.githubusercontent.com/65666095/93840913-00e09680-fc60-11ea-8ef6-428e1ad5b46e.PNG)
 
 The UI for URL input is as shown below:
+![Product](https://user-images.githubusercontent.com/65666095/93841969-405cb200-fc63-11ea-96a3-26be6a36a24d.png)
 
+The UI for file input is as shown below:
+![File](https://user-images.githubusercontent.com/65666095/93841890-02f82480-fc63-11ea-94c9-c3226cb321bb.png)
 
+The UI for text input is as shown below:
+![Text](https://user-images.githubusercontent.com/65666095/93841936-24f1a700-fc63-11ea-9b07-8e685e4ebbf1.png)
