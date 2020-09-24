@@ -4,7 +4,7 @@
 
 ### YouTube Link: 
 
-[![](https://i9.ytimg.com/vi_webp/zvme9ARshD8/mqdefault.webp?sqp=CJCZpfsF&rs=AOn4CLCYgil0diVKrPbCJ5Wchyl3i12Njw)](https://www.youtube.com/watch?v=zvme9ARshD8)
+[![Video](https://i9.ytimg.com/vi_webp/zvme9ARshD8/mqdefault.webp?sqp=CJTzs_sF&rs=AOn4CLBkjs-_C1oPtVtZgfWL2llzZA_dKw)](https://www.youtube.com/watch?v=zvme9ARshD8)
 
 [![DOI](https://zenodo.org/badge/295188611.svg)](https://zenodo.org/badge/latestdoi/295188611)
 
@@ -28,8 +28,8 @@ Although we have used HTML and CSS for the FrontEnd, the users can merge the bac
 
 
 ## Steps for execution
-1. Run `python -r requirements.txt` followed by `python -c "import nltk; nltk.download('punkt'); nltk.download('stopwords')"`
-2. Make sure you change the path accordingly in the files.  
+1. Run `pip install -r requirements.txt` followed by `python -c "import nltk; nltk.download('punkt'); nltk.download('stopwords')"`
+2. Make sure you change the path accordingly in the files.  (Refer to the issue: https://github.com/bsharathramesh/SE_Project1/issues/31 to get the list of files where changes are needed)
 3. Execute manage.py using the command `python3 manage.py runserver` at `/SE_Project1/sentimental_analaysis`. This runs the Django server such that we can open the webUI for the project on the browser.
 4. Next, open your browser and type in `localhost:8000` in the search bar to open the webUI of the application.
 5. The UI typically looks as shown below and here you have a choice between URL, file or normal text input.
