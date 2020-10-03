@@ -23,7 +23,7 @@ class AmazonReviewsSpider(scrapy.Spider):
         super().__init__(**kwargs)
 
     # Creating list of urls to be scraped by appending page number a the end of base url
-        for i in range(1, 3):
+        for i in range(1, 121):
             self.start_urls.append(myBaseUrl + str(i))
 
     # Defining a Scrapy parser
