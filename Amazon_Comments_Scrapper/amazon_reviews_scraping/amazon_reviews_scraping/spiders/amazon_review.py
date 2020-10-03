@@ -13,15 +13,18 @@ class AmazonReviewsSpider(scrapy.Spider):
     # Domain names to scrape
     allowed_domains = ['amazon.com']
 
-    os.system("rm /Users/nischalkashyap/Downloads/Projects/CELT/SE_Project1/sentimental_analysis/reviews.json")
-    my_file_handle = open('/Users/nischalkashyap/Downloads/Projects/CELT/SE_Project1/Amazon_Comments_Scrapper/amazon_reviews_scraping/amazon_reviews_scraping/spiders/ProductAnalysis.txt')
-    myBaseUrl = my_file_handle.read()
     # myBaseUrl = "https://www.amazon.in/Apple-MacBook-Air-13-3-inch-MQD32HN/product-reviews/B073Q5R6VR/ref=cm_cr_dp_d_show_all_btm?ie=UTF8&amp;amp;reviewerType=all_reviews&amp;amp;pageNumber="
     start_urls = []
 
+    def __init__(self, asn='', **kwargs):
+
+
+        myBaseUrl = f'https://www.amazon.in/product-reviews/{asn}/ref=cm_cr_dp_d_show_all_btm?ie=UTF8&amp;amp;reviewerType=all_reviews&amp;amp;pageNumber='  # py36
+        super().__init__(**kwargs)
+
     # Creating list of urls to be scraped by appending page number a the end of base url
-    for i in range(1, 121):
-        start_urls.append(myBaseUrl + str(i))
+        for i in range(1, 3):
+            self.start_urls.append(myBaseUrl + str(i))
 
     # Defining a Scrapy parser
     def parse(self, response):
