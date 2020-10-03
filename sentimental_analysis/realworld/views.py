@@ -131,8 +131,8 @@ def productanalysis(request):
     if request.method=='POST':
         asn = request.POST.get("asn", "")
         os.chdir('Amazon_Comments_Scrapper/amazon_reviews_scraping')
+        os.remove('reviews.json')
         res = os.system(f'scrapy crawl amazon_reviews -o reviews.json -a asn={asn}')
-        print(res)
         final_comment = []
         with open('reviews.json') as json_file:
             data = json.load(json_file)
