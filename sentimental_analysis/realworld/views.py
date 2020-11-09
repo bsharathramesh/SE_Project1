@@ -129,13 +129,12 @@ def input(request):
 
 def productanalysis(request):
     if request.method=='POST':
-        blogname = request.POST.get("blogname", "")
-        text_file = open("/Users/nischalkashyap/Downloads/Projects/CELT/SE_Project1/Amazon_Comments_Scrapper/amazon_reviews_scraping/amazon_reviews_scraping/spiders/ProductAnalysis.txt", "w")
-        text_file.write(blogname)
-        text_file.close()
-        os.system('scrapy runspider /Users/nischalkashyap/Downloads/Projects/CELT/SE_Project1/Amazon_Comments_Scrapper/amazon_reviews_scraping/amazon_reviews_scraping/spiders/amazon_review.py -o reviews.json')
+        asn = request.POST.get("asn", "")
+        os.chdir('Amazon_Comments_Scrapper/amazon_reviews_scraping')
+        os.remove('reviews.json')
+        res = os.system(f'scrapy crawl amazon_reviews -o reviews.json -a asn={asn}')
         final_comment = []
-        with open('/Users/nischalkashyap/Downloads/Projects/CELT/SE_Project1/sentimental_analysis/reviews.json') as json_file:
+        with open('reviews.json') as json_file:
             data = json.load(json_file)
             for p in range(1,len(data)-1):
                 a = data[p]['comment']
@@ -147,7 +146,7 @@ def productanalysis(request):
         return render(request, 'realworld/sentiment_graph.html', {'sentiment': result})
 
     else:
-        note = "Please Enter the product blog link for analysis"
+        note = "Please Enter the ASN code for analysis"
         return render(request, 'realworld/productanalysis.html', {'note': note})
 
 # Custom template filter to retrieve a dictionary value by key.
